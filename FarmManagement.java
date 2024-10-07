@@ -10,7 +10,7 @@ public class FarmManagement {
 
     void printAnimalsCanWalk() {
         for (Animals a : animals) {
-            if (a.walk()) {
+            if (a instanceof Pig || a instanceof Duck) {
                 System.out.println(a.name);
             }
         }
@@ -18,7 +18,7 @@ public class FarmManagement {
 
     void printAnimalsCanSwim() {
         for (Animals a : animals) {
-            if (a.swim()) {
+            if (a instanceof Fish || a instanceof Duck) {
                 System.out.println(a.name);
             }
         }
